@@ -9,32 +9,34 @@ let superContract = 100;
 let contract = 150;
 let grant = 200;
 
-let score = prompt("To'plagan balingizni kiriting") -0
+let score = prompt("To'plagan balingizni kiriting") - 0
 
 
-if( score < 80){
+if (score < 80) {
     elHeader.textContent = 'Siz talabalikka tavsiya etilmadingiz'
-}else if (score > 80 && score < 100){
+} else if (score > 80 && score < 100) {
     let confirmStudent = confirm('Siz super kontrakt asosida qabul qilindingiz kontrakt 3000$ \n Rozimisiz ?')
-    if(confirmStudent){
+    if (confirmStudent) {
         let userMoney = prompt('Qancha pulingiz bor?');
-        if(userMoney >= 3000){
+        if (userMoney >= 3000) {
             elHeader.textContent = 'Siz talabasiz'
-        }else{
-        elHeader.textContent = 'Siz talaba emassiz chunki pulingiz kam'} 
+        } else {
+            elHeader.textContent = 'Siz talaba emassiz chunki pulingiz kam'
+        }
     }
 }
-else if (score > 100 && score < 150){
+else if (score > 100 && score < 150) {
     let confirmStudent = confirm('Siz  kontrakt asosida qabul qilindingiz kontrakt 2000$ \n Rozimisiz ?')
-    if(confirmStudent){
+    if (confirmStudent) {
         let userMoney = prompt('Qancha pulingiz bor?')
-        if(userMoney >= 2000){
+        if (userMoney >= 2000) {
             elHeader.textContent = 'Siz talabasiz'
-        }else(userMoney < 3000) 
-        elHeader.textContent = 'Siz talaba emassiz chunki pulingiz kam'
+        } else {
+            elHeader.textContent = 'Siz talaba emassiz chunki pulingiz kam'
+        }
     }
 }
-else if (score > 150 && score <= 200){
+else if (score > 150 && score <= 200) {
     elHeader.textContent = 'Tabriklaymiz siz grant asosida talabalar safiga qabul qilindingiz'
 }
 
