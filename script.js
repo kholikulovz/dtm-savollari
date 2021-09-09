@@ -20,8 +20,8 @@ if( score < 80){
         let userMoney = prompt('Qancha pulingiz bor?');
         if(userMoney >= 3000){
             elHeader.textContent = 'Siz talabasiz'
-        }else(userMoney < 3000) 
-        elHeader.textContent = 'Siz talaba emassiz chunki pulingiz kam'
+        }else{
+        elHeader.textContent = 'Siz talaba emassiz chunki pulingiz kam'} 
     }
 }
 else if (score > 100 && score < 150){
